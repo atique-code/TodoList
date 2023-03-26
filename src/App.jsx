@@ -70,7 +70,14 @@ class App extends React.Component{
     let data = localStorage.getItem("Todo_list");
     console.log(data);
 
-    this.state.todolist= JSON.parse(data)
+    if(data==null){
+      this.state.todo=[]
+    }
+    else{
+      this.state.todolist= JSON.parse(data)
+
+    }
+
     this.setState({})
   }
 
