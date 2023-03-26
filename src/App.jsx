@@ -1,8 +1,8 @@
 import React from "react";
 // import {MdAdd } from "react-icons/md";
-import {AiOutlineDelete } from "react-icons/ai";
-import {AiOutlineEdit } from "react-icons/ai";
-import {GrUpdate } from "react-icons/gr";
+// import {AiOutlineDelete } from "react-icons/ai";
+// import {AiOutlineEdit } from "react-icons/ai";
+// import {GrUpdate } from "react-icons/gr";
 import "./style.css";
 
 class App extends React.Component{
@@ -94,14 +94,14 @@ class App extends React.Component{
                 <li key={i}>
 
                   {v.title}
-                  <button onClick={()=>this.delete_todo(i)}><AiOutlineDelete/></button>
-                  <button onClick={()=> this.edit_todo(i)} ><AiOutlineEdit/></button>
+                  <button onClick={()=>this.delete_todo(i)}>delete</button>
+                  <button onClick={()=> this.edit_todo(i)} >edit</button>
                 </li>
                 :
                 <li key={i}>
 
                   <input type="text" style={{width:this.state.width}} value={  v.title} onChange={(e)=>this.statechg(e.target.value,i)} />
-                  <button onClick={()=> this.update_todo(i)} ><GrUpdate/></button>
+                  <button onClick={()=> this.update_todo(i)} >update</button>
                 </li>
                 )
                })
