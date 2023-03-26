@@ -1,5 +1,5 @@
 import React from "react";
-import {MdAdd } from "react-icons/md";
+// import {MdAdd } from "react-icons/md";
 import {AiOutlineDelete } from "react-icons/ai";
 import {AiOutlineEdit } from "react-icons/ai";
 import {GrUpdate } from "react-icons/gr";
@@ -83,7 +83,7 @@ class App extends React.Component{
         <input type="text" style={{listStyle:"none",margin:12+"px"}} value={value} placeholder="enter your list" onChange={(e)=>{
           this.setState({value: e.target.value})
         }} />
-        <button onClick={this.toDo_list} id="btn-add" ><MdAdd/></button>
+        <button onClick={this.toDo_list} id="btn-add" >Add</button>
 
         <div>
           <ul>
