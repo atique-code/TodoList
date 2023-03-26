@@ -1,0 +1,33 @@
+body{
+    background-color: #088F8F;
+}
+h1{
+    background-color: #7F00FF;
+    color: #ffff;
+}
+.top{
+    text-align: center;
+}
+
+input{
+    /* width: 200px; */
+    /* padding: 6px; */
+    
+}
+
+#btn-add{
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+}
+button{
+    margin-right: 20px;
+}
+#btn-add:hover{
+    background-color: #50C878;
+}
+
+
+ul{
+    list-style-type: none;
+}
